@@ -14,6 +14,5 @@ from routes.productionBP import production_blueprint
 from routes.userBP import user_blueprint
 from routes.loginBP import login_blueprint
 
-
 def create_app(config_name):
     app = Flask(__name__)
