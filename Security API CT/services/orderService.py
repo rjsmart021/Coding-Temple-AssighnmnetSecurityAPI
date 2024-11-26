@@ -16,7 +16,6 @@ def save(order_data):
         session.refresh(new_order)
         return new_order
     
-    
 # Get all orders in database
 def find_all(page=1, per_page=10):
     query = db.select(Order).limit(per_page).offset((page-1)*per_page)
