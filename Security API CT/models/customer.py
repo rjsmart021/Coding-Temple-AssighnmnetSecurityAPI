@@ -4,6 +4,7 @@ from typing import List
 
 # from models.order import Order
 
+
 class Customer(Base):
     __tablename__ = "customers"
     id: Mapped[int] = mapped_column(primary_key=True)
