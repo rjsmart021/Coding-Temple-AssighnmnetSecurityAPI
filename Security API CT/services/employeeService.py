@@ -12,7 +12,6 @@ def save(employee_data):
         session.refresh(new_employee)
         return new_employee
     
-    
 # Get all employees in database
 def find_all():
     query = db.select(Employee)
