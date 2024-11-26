@@ -14,7 +14,6 @@ def save(product_data):
         session.refresh(new_product)
         return new_product
     
-    
 # Get all products in database
 def find_all(page=1, per_page=10):
     query = db.select(Product).limit(per_page).offset((page-1)*per_page)
